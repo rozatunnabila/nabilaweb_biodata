@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Pribadi - Galeri</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="topbar">
+    <a href="index.html" class="topbar-brand">
+      <div class="topbar-brand-logo">RN</div>
+      <div class="topbar-brand-name">Rozatun Nabila</div>
+    </a>
+    <div class="topbar-divider"></div>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-user"></i><span>Profil</span></a></li>
+      <li class="nav-item"><a href="family.html" class="nav-link"><i class="fas fa-users"></i><span>Family</span></a></li>
+      <li class="nav-item"><a href="gallery.html" class="nav-link active"><i class="fas fa-images"></i><span>Gallery</span></a></li>
+      <li class="nav-item"><a href="activities.html" class="nav-link"><i class="fas fa-running"></i><span>Activity</span></a></li>
+      <li class="nav-item"><a href="education.html" class="nav-link"><i class="fas fa-graduation-cap"></i><span>Education</span></a></li>
+      <li class="nav-item"><a href="hobby.html" class="nav-link"><i class="fas fa-heart"></i><span>My Hobby</span></a></li>
+      <li class="nav-item"><a href="dreams.html" class="nav-link"><i class="fas fa-star"></i><span>My Dream</span></a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fas fa-address-book"></i><span>Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Galeri Foto</h1>
+      <p>Kumpulan momen berharga dalam kehidupan saya</p>
+    </div>
+
+    <div class="glass-card">
+      <div class="section-title"><i class="fas fa-images"></i> Galeri Foto Pribadi</div>
+      <p style="color:var(--text2); margin-bottom:24px; font-size:14px;">Klik foto untuk melihat lebih besar — koleksi momen berharga dalam kehidupan saya.</p>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item" onclick="openLightbox(0)">
+          <img src="images/kucing.jpg" alt="Kucing Gemas">
+          <div class="gallery-caption">Kucing Gemas</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(1)">
+          <img src="images/family.jpg" alt="Momen Keluarga" >
+          <div class="gallery-caption"> Momen Keluarga</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(2)">
+          <img src="images/selfie.jpg" alt="Selfie" >
+          <div class="gallery-caption"> Selfie</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(3)">
+          <img src="images/belajar.jpg" alt="Saat Belajar">
+          <div class="gallery-caption"> Saat Belajar</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(4)">
+          <img src="images/sport.jpg" alt="Olahraga Pagi" >
+          <div class="gallery-caption"> Olahraga Pagi</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(5)">
+          <img src="images/food.jpg" alt="Makanan Favorit" >
+          <div class="gallery-caption"> Makanan Favorit</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(6)">
+          <img src="images/liburan.jpg" alt="Liburan">
+          <div class="gallery-caption"> Liburan</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(7)">
+          <img src="images/sunset.jpg" alt="Sunset" >
+          <div class="gallery-caption"> Sunset</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(8)">
+          <img src="images/foto.jpg" alt="Foto Nongki" >
+          <div class="gallery-caption"> Foto Nongki</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(9)">
+          <img src="images/bunga.jpg" alt="Fresh Flower" >
+          <div class="gallery-caption"> Fresh Flower</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(10)">
+          <img src="images/shopping.jpg" alt="Shopping" >
+          <div class="gallery-caption"> Shopping</div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(11)">
+          <img src="images/friend.jpg" alt="BestFriend" >
+          <div class="gallery-caption">My BestFriend</div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2026 Biodata Pribadi Rozatun Nabila. Semua hak dilindungi.</p>
+      <p>Website ini dibuat sebagai portofolio biodata pribadi.</p>
+    </footer>
+  </main>
+
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lb-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+    <button class="lb-nav lb-prev" onclick="event.stopPropagation(); navLightbox(-1)"><i class="fas fa-chevron-left"></i></button>
+    <img id="lb-img" src="" alt="">
+    <button class="lb-nav lb-next" onclick="event.stopPropagation(); navLightbox(1)"><i class="fas fa-chevron-right"></i></button>
+    <div class="lb-caption" id="lb-caption"></div>
+  </div>
+</body>
+</html>

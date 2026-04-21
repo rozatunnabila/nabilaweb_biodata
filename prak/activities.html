@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Pribadi - Aktivitas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- NAVBAR SAMA PERSIS DENGAN DREAMS -->
+  <nav class="topbar">
+    <a href="index.html" class="topbar-brand">
+      <div class="topbar-brand-logo">RN</div>
+      <div class="topbar-brand-name">Rozatun Nabila</div>
+    </a>
+    <div class="topbar-divider"></div>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-user"></i><span>Profil</span></a></li>
+      <li class="nav-item"><a href="family.html" class="nav-link"><i class="fas fa-users"></i><span>Family</span></a></li>
+      <li class="nav-item"><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i><span>Gallery</span></a></li>
+      <li class="nav-item"><a href="activities.html" class="nav-link active"><i class="fas fa-running"></i><span>Activity</span></a></li>
+      <li class="nav-item"><a href="education.html" class="nav-link"><i class="fas fa-graduation-cap"></i><span>Education</span></a></li>
+      <li class="nav-item"><a href="hobby.html" class="nav-link"><i class="fas fa-heart"></i><span>My Hobby</span></a></li>
+      <li class="nav-item"><a href="dreams.html" class="nav-link"><i class="fas fa-star"></i><span>My Dream</span></a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fas fa-address-book"></i><span>Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Aktivitas Harian</h1>
+      <p>Rutinitas harian dari pagi hingga malam hari</p>
+    </div>
+
+    <div class="glass-card">
+      <div class="section-title"><i class="fas fa-running"></i> Aktivitas Harian Saya</div>
+      <p style="color:var(--text2); margin-bottom:28px; font-size:14px;">Hover pada kartu untuk melihat detail aktivitas di setiap waktu.</p>
+
+      <div class="flip-dasar">
+        <!-- Pagi -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/bangun pagi.jpg" alt="Pagi" onerror="this.style.background='linear-gradient(135deg,#7c5cbf,#f472b6)'; this.style.minHeight='200px';">
+              <div class="flip-front-content">
+                <h3><i class="far fa-sun"></i> Pagi Hari</h3>
+                <p class="card-time"><i class="far fa-clock"></i> 06:00 – 07:30</p>
+              </div>
+            </div>
+            <div class="flip-back">
+              <div class="flip-back-icon"><i class="far fa-sun"></i></div>
+              <h3>Sarapan & Mandi</h3>
+              <p>Setelah shalat shubuh dilanjutkan dengan mandi kemudian baru sarapan pagi.</p>
+              <div class="detail-list">
+                <div><i class="fas fa-check-circle"></i> Shalat Shubuh</div>
+                <div><i class="fas fa-check-circle"></i> Mandi pagi</div>
+                <div><i class="fas fa-check-circle"></i> Sarapan bergizi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Siang -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/ngampus.jpg" alt="Siang" onerror="this.style.background='linear-gradient(135deg,#38bdf8,#7c5cbf)'; this.style.minHeight='200px';">
+              <div class="flip-front-content">
+                <h3><i class="far fa-clock"></i> Siang Hari</h3>
+                <p class="card-time"><i class="far fa-clock"></i> 09:00 – 16:00</p>
+              </div>
+            </div>
+            <div class="flip-back">
+              <div class="flip-back-icon"><i class="fas fa-graduation-cap"></i></div>
+              <h3>Masuk Kampus</h3>
+              <p>Belajar di lingkungan kampus sesuai dengan mata kuliah yang telah diambil.</p>
+              <div class="detail-list">
+                <div><i class="fas fa-check-circle"></i> Perkuliahan</div>
+                <div><i class="fas fa-check-circle"></i> Diskusi kelompok</div>
+                <div><i class="fas fa-check-circle"></i> Praktikum</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sore -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/pulang.jpg" alt="Sore" onerror="this.style.background='linear-gradient(135deg,#f472b6,#38bdf8)'; this.style.minHeight='200px';">
+              <div class="flip-front-content">
+                <h3><i class="far fa-moon"></i> Sore Hari</h3>
+                <p class="card-time"><i class="far fa-clock"></i> 16:00 – 19:00</p>
+              </div>
+            </div>
+            <div class="flip-back">
+              <div class="flip-back-icon"><i class="fas fa-users"></i></div>
+              <h3>Waktu Keluarga</h3>
+              <p>Waktu istirahat setelah seharian di kampus dan bersama keluarga.</p>
+              <div class="detail-list">
+                <div><i class="fas fa-check-circle"></i> Istirahat</div>
+                <div><i class="fas fa-check-circle"></i> Quality time keluarga</div>
+                <div><i class="fas fa-check-circle"></i> Makan malam bersama</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Malam -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="images/malam.jpg" alt="Malam" onerror="this.style.background='linear-gradient(135deg,#1e1a35,#7c5cbf)'; this.style.minHeight='200px';">
+              <div class="flip-front-content">
+                <h3><i class="fas fa-book"></i> Malam Hari</h3>
+                <p class="card-time"><i class="far fa-clock"></i> 19:00 – 22:00</p>
+              </div>
+            </div>
+            <div class="flip-back">
+              <div class="flip-back-icon"><i class="fas fa-star"></i></div>
+              <h3>Pengembangan Diri</h3>
+              <p>Belajar mandiri dan merencanakan kegiatan esok hari.</p>
+              <div class="detail-list">
+                <div><i class="fas fa-check-circle"></i> Belajar mandiri</div>
+                <div><i class="fas fa-check-circle"></i> Review materi</div>
+                <div><i class="fas fa-check-circle"></i> Persiapan esok hari</div>
+                <div><i class="fas fa-check-circle"></i> Istirahat / tidur</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2026 Biodata Pribadi Rozatun Nabila. Semua hak dilindungi.</p>
+      <p>Website ini dibuat sebagai portofolio biodata pribadi.</p>
+    </footer>
+  </main>
+</body>
+</html>

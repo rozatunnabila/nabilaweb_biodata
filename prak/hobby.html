@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Pribadi - Hobi & Minat</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="topbar">
+    <a href="index.html" class="topbar-brand">
+      <div class="topbar-brand-logo">RN</div>
+      <div class="topbar-brand-name">Rozatun Nabila</div>
+    </a>
+    <div class="topbar-divider"></div>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-user"></i><span>Profil</span></a></li>
+      <li class="nav-item"><a href="family.html" class="nav-link"><i class="fas fa-users"></i><span>Family</span></a></li>
+      <li class="nav-item"><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i><span>Gallery</span></a></li>
+      <li class="nav-item"><a href="activities.html" class="nav-link"><i class="fas fa-running"></i><span>Activity</span></a></li>
+      <li class="nav-item"><a href="education.html" class="nav-link"><i class="fas fa-graduation-cap"></i><span>Education</span></a></li>
+      <li class="nav-item"><a href="hobby.html" class="nav-link active"><i class="fas fa-heart"></i><span>My Hobby</span></a></li>
+      <li class="nav-item"><a href="dreams.html" class="nav-link"><i class="fas fa-star"></i><span>My Dream</span></a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fas fa-address-book"></i><span>Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Hobi & Minat</h1>
+      <p>Klik gambar samping untuk eksplorasi konten interaktif!</p>
+    </div>
+
+    <div class="glass-card">
+      <div class="hobby-layout">
+        <!-- Side Images (mencong/miring) -->
+        <div class="hobby-side">
+          <div class="side-img-card" onclick="openHobby('memasak')">
+            <img src="images/memasak.jpg" alt="Memasak">
+            <div class="side-img-overlay"><h4> Memasak</h4></div>
+          </div>
+          <div class="side-img-card" onclick="openHobby('membaca')">
+            <img src="images/membaca.jpg" alt="Membaca" >
+            <div class="side-img-overlay"><h4> Membaca</h4></div>
+          </div>
+          <div class="side-img-card" onclick="openHobby('menonton')">
+            <img src="images/menonton.jpg" alt="Menonton">
+            <div class="side-img-overlay"><h4> Menonton</h4></div>
+          </div>
+          <div class="side-img-card" onclick="openHobby('musik')">
+            <img src="images/musik.jpg" alt="Musik" >
+            <div class="side-img-overlay"><h4> Musik</h4></div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="hobby-main">
+          <div class="section-title"><i class="fas fa-heart"></i> Minat Saya</div>
+
+          <div class="hobby-featured">
+            <div class="hobby-featured-img">
+              <img src="images/voiceover.jpg" alt="Voice Over">
+            </div>
+            <div class="hobby-featured-content">
+              <h3><i class="fas fa-microphone-alt"></i> Voice Over</h3>
+              <p>Saya memiliki minat dan kemampuan dalam bidang voice over. Saya mampu menyesuaikan karakter suara sesuai kebutuhan, baik untuk konten formal, promosi, maupun edukasi. Suara adalah kekuatan yang bisa menyentuh hati dan memberikan dampak besar bagi pendengar.</p>
+            </div>
+          </div>
+
+          <div class="hobby-grid">
+            <div class="hobby-card">
+              <div class="hobby-icon"><i class="fas fa-book-open"></i></div>
+              <h4>Membaca</h4>
+              <p>Suka membaca novel fiksi ilmiah dan pengembangan diri. Membuka wawasan dan imajinasi.</p>
+            </div>
+            <div class="hobby-card">
+              <div class="hobby-icon"><i class="fas fa-headphones"></i></div>
+              <h4>Musik</h4>
+              <p>Mendengarkan musik indie & pop. Musik membantu fokus dan menenangkan hati.</p>
+            </div>
+            <div class="hobby-card">
+              <div class="hobby-icon"><i class="fas fa-film"></i></div>
+              <h4>Menonton</h4>
+              <p>Suka drama Korea genre thriller & romance. Cerita yang penuh emosi.</p>
+            </div>
+            <div class="hobby-card">
+              <div class="hobby-icon"><i class="fas fa-utensils"></i></div>
+              <h4>Memasak</h4>
+              <p>Eksperimen resep baru di dapur. Masakan sederhana tapi nikmat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2026 Biodata Pribadi Rozatun Nabila. Semua hak dilindungi.</p>
+      <p>Hidup adalah seni menikmati hal-hal kecil dengan penuh semangat.</p>
+    </footer>
+  </main>
+  <div class="modal-backdrop" id="hobbyModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalTitle"><i class="fas fa-heart"></i> Hobi</h3>
+        <button class="modal-close-btn" onclick="closeHobby()"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+</body>
+</html>
